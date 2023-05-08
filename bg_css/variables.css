@@ -1,0 +1,9 @@
+:root {
+    --green: rgba(114,162,137);
+    --darkgreen: rgba(104,106,109);
+    --lightgreen: rgba(114,162,137,0.3);
+    --horizontal-space: 20px;
+    --main-border: 1px solid var(--lightgreen);
+    --red: #CC0000;
+    --yellow: #E7DE6F;
+}

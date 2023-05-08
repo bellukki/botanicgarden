@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="bg_css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Botanic-Garden</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>Sunny</span>
+        <i class="far fa-sun"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>15:47</span>
+      </div>
+      <div class="status-bar__column status-bar__temerature">
+        <span>21</span>
+        <i class="fas fa-temperature-low"></i>
+        <span>33</span>
+        <i class="fas fa-tint"></i>
+        <div class="status-bar__humidity">%</div>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Botanic-Garden</h1>
+      <p class="welcome-header__text">
+        If you have a Botanic Account, log in with your email or phone number.
+      </p>
+    </header>
+
+    <form action="plants.html" method="get" id="login-form">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
+      <input type="submit" value="Garden In" />
+      <a href="#">Find Botanic Account or Password</a>
+    </form>
+    <div class="no-mobile">
+      <span>The grass is too Thick!</span>
+      <span>Tend your Garden!</span>
+      <span>Please reduce your browser Width :D</span></div>
+    <script
+      src="https://kit.fontawesome.com/759066b956.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
