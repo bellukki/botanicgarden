@@ -1,15 +1,16 @@
-#plants-display-link{
+.plants-display-link{
     text-align: center;
     display: block;
-    background-color: #fafafa;
-    padding: 15px 0;
-    font-size: 18px;
+    background-color: var(--lightgreen);
+    padding: 10px 0;
+    font-size: 17px;
+    color: var(--darkgreen);
     margin-bottom: 10px;
     margin-top: -10px;
 }
 
-#plants-display-link i{
-    color: rgba(0,0,0,0.3);
+.plants-display-link i{
+    color: var(--green)
 }
 
 .plants-screen{
@@ -65,12 +66,20 @@ margin: 20px 0;
         transform: none;
         opacity: 1;
         }
+        25%{
+            transform: translateY(130px) translateX(-70px) rotateX(90deg);
+            
+        }
         50%{
-            transform: translateY(200px) rotateX(360deg);
+            transform: translateY(260px)  translateX(30px) rotateX(180deg);
+            
+        }
+    75%{
+            transform: translateY(390px)  translateX(-40px) rotateX(270deg);
             
         }
         100%{
-            transform: translateY(500px);
+            transform: translateY(520px) translateX(30px)  rotateX(360deg);;
             opacity: 0;
             }
 }
@@ -79,10 +88,12 @@ margin: 20px 0;
     position: fixed;
     top: 30px;
     left: 30px;
-    font-size: 52px;
+    font-size: 122px;
     transform: translateY(-50px);
     opacity: 0;
-    animation: rotateSplashScreen 1.8s linear forwards;
+    will-change: transform;
+    animation: rotateSplashScreen 3s cubic-bezier(0.600, 0.040, 0.380, 0.335) forwards;
+    animation-delay: 0.1s;
 }
 .splash-screen .splash__leaf2{
     position: fixed;
@@ -91,7 +102,8 @@ margin: 20px 0;
     font-size: 52px;
     transform: translateY(-50px);
     opacity: 0;
-    animation: rotateSplashScreen 3s ease-in-out forwards;
+    will-change: transform;
+    animation: rotateSplashScreen 2.3s ease-in-out forwards;
 }
 .splash-screen .splash__leaf3{
     position: fixed;
@@ -100,15 +112,18 @@ margin: 20px 0;
     font-size: 52px;
     transform: translateY(-50px);
     opacity: 0;
+    will-change: transform;
     animation: rotateSplashScreen 2.2s linear forwards;
+    animation-delay: 0.2s;
 }
 .splash-screen .splash__leaf4{
     position: fixed;
     top: 350px;
-    right: 50px;
-    font-size: 59px;
+    right: 150px;
+    font-size: 159px;
     transform: translateY(-50px);
     opacity: 0;
+    will-change: transform;
     animation: rotateSplashScreen 1.8s ease-in-out forwards;
 }
 .splash-screen .splash__leaf5{
@@ -118,15 +133,18 @@ margin: 20px 0;
     font-size: 52px;
     transform: translateY(-50px);
     opacity: 0;
-    animation: rotateSplashScreen 2.5s linear forwards;
+    will-change: transform;
+    animation: rotateSplashScreen 3s cubic-bezier(0.380, -0.350, 0.265, 0.550) forwards;
+    animation-delay: 0.5s;
 }
 .splash-screen .splash__leaf6{
     position: fixed;
     top: 150px;
     right: 150px;
-    font-size: 22px;
+    font-size: 77px;
     transform: translateY(-50px);
     opacity: 0;
+    will-change: transform;
     animation: rotateSplashScreen 2.3s linear forwards;
 }
 .splash-screen .splash__leaf7{
@@ -136,7 +154,8 @@ margin: 20px 0;
     font-size: 72px;
     transform: translateY(-50px);
     opacity: 0;
-    animation: rotateSplashScreen 3s linear forwards;
+    will-change: transform;
+    animation: rotateSplashScreen 3s ease-in forwards;
 }
 .splash-screen .splash__leaf8{
     position: fixed;
@@ -145,5 +164,7 @@ margin: 20px 0;
     font-size: 152px;
     transform: translateY(-50px);
     opacity: 0;
+    will-change: transform;
     animation: rotateSplashScreen 2.5s linear forwards;
+    animation-delay: 0.3s;
 }

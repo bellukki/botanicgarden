@@ -52,3 +52,25 @@
     margin-bottom: 10px;
     display: block;
 }
+.user-component__column i{
+    margin-right: 5px;
+}
+
+@keyframes flyingplane {
+    from {
+        transform: none;
+    }
+
+    to {
+        transform: scale(1.5) translateX(10px) translateY(-10px);
+        opacity:0
+    }
+}
+
+.user-component__column .fa-paper-plane:hover {
+    animation: flyingplane 1s linear infinite;
+    will-change: transform;
+    cursor: pointer;
+}
+
+

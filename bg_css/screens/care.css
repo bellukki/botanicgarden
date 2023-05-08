@@ -1,18 +1,18 @@
-#care-screen{
+.care-screen{
     background-color:#F5F7F5;
 }
 
-#care-screen .status-bar, #care-screen .alt-header{
+.care-screen .status-bar, .care-screen .alt-header{
     top:0;
     position:fixed;
     width: 100%;
     box-sizing: border-box;
     background-color:#F5F7F5;
 }
-#care-screen .status-bar{
+.care-screen .status-bar{
     z-index:2;
 }
-#care-screen .alt-header{
+.care-screen .alt-header{
     z-index:1;
     top: 10px;
 }

@@ -15,16 +15,18 @@
     margin-left: 25px;
 }
 
-@keyframes rotateCog {
+@keyframes rotateSun {
     from {
         transform: none;
     }
 
     to {
-        transform: rotateZ(360deg);
+        transform: scale(1.5) rotateZ(90deg);
+        opacity:0
     }
 }
 
-.screen-header__icons .fa-gear:hover {
-    animation: rotateCog 1s linear infinite;
+.screen-header__icons .fa-sun:hover {
+    animation: rotateSun 1.2s linear infinite;
+    will-change: transform;
 }
