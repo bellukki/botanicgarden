@@ -1,40 +1,90 @@
-<!DOCTYPE html>
-<html lang="ko">
+<!doctype html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="bg_css/styles.css" />
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Environment - Botanic Garden</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Environment - Tea Time</title>
   </head>
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>Sunny</span>
-        <i class="far fa-sun"></i>
+        <span>13:27 01.20 SAT</span>
       </div>
       <div class="status-bar__column">
-        <span>15:47</span>
+        <span>🍵</span>
+        <span>🎉</span>
+        <span>🍨</span>
       </div>
-      <div class="status-bar__column status-bar__temerature">
-        <span>21</span>
-        <i class="fas fa-temperature-low"></i>
-        <span>33</span>
-        <i class="fas fa-tint"></i>
-        <div class="status-bar__humidity">%</div>
+      <div class="status-bar__column">
+        <span class="material-symbols-outlined"> wifi_password </span>
+        <span>76%</span>
+        <span class="material-symbols-outlined"> battery_horiz_075 </span>
       </div>
     </div>
-    <header class="alt-header">
+
+    <header class="screen-header more-header">
       <div class="alt-header__column">
-        <a href="more.html">
-          <i class="fas fa-angle-left fa-2x"></i>
+        <a href="teatime.html">
+          <span class="material-symbols-outlined"> arrow_back_ios_new </span>
         </a>
       </div>
       <div class="alt-header__column">
         <h1 class="alt-header__title">Environment</h1>
       </div>
-      <div class="alt-header__column">
-        <i class="fas fa-search fa-2x"></i>
+      <div class="screen-header__icons">
+        <input type="text" maxlength="12" placeholder="Search.." />
+        <span class="material-symbols-outlined"> search </span>
+      </div>
+      <div class="keyboard">
+        <div class="keyboard_row">
+          <div>Q</div>
+          <div>W</div>
+          <div>E</div>
+          <div>R</div>
+          <div>T</div>
+          <div>Y</div>
+          <div>U</div>
+          <div>I</div>
+          <div>O</div>
+          <div>P</div>
+        </div>
+        <div class="keyboard_row">
+          <div>A</div>
+          <div>S</div>
+          <div>D</div>
+          <div>F</div>
+          <div>G</div>
+          <div>H</div>
+          <div>J</div>
+          <div>K</div>
+          <div>L</div>
+        </div>
+        <div class="keyboard_row">
+          <span class="material-symbols-outlined"> shift </span>
+          <div>Z</div>
+          <div>X</div>
+          <div>C</div>
+          <div>V</div>
+          <div>B</div>
+          <div>N</div>
+          <div>M</div>
+          <span class="material-symbols-outlined"> backspace </span>
+        </div>
+        <div class="keyboard_row">
+          <div>123</div>
+          <span class="material-symbols-outlined"> mood </span>
+          <div>space</div>
+          <div>return</div>
+        </div>
       </div>
     </header>
 
@@ -42,7 +92,7 @@
       <ul class="settings-list">
         <li class="settings__setting">
           <div class="settings__setting-column">
-            <i class="fas fa-bullhorn"></i>
+            <span class="material-symbols-outlined"> campaign </span>
             <span>Notices</span>
           </div>
           <div class="settings__setting-column"></div>
@@ -50,81 +100,83 @@
 
         <li class="settings__setting">
           <div class="settings__setting-column">
-            <i class="far fa-sun"></i>
-            <span>Day Light</span>
+            <span class="material-symbols-outlined"> inventory </span>
+            <span>Invitation List</span>
           </div>
-          <div class="settings__setting-column">Good</div>
+          <a href="index.html">
+            <div class="settings__setting-column">Go Check</div>
+          </a>
         </li>
 
         <li class="settings__setting">
           <div class="settings__setting-column">
-            <i class="fas fa-temperature-low"></i>
-            <span>Temperature</span>
+            <span class="material-symbols-outlined"> psychiatry </span>
+            <span>Tea Leaves</span>
           </div>
-          <div class="settings__setting-column">21.2°C</div>
+          <div class="settings__setting-column">Earl-Grey</div>
         </li>
 
         <li class="settings__setting">
           <div class="settings__setting-column">
-            <i class="fas fa-tint"></i>
-            <span>Humidity</span>
+            <span class="material-symbols-outlined"> deceased </span>
+            <span>Flower</span>
           </div>
-          <div class="settings__setting-column">33.3%</div>
+          <div class="settings__setting-column">Summer Flowers</div>
         </li>
 
         <li class="settings__setting">
           <div class="settings__setting-column">
-            <i class="fa-solid fa-globe"></i>
-            <span>Soil Stability</span>
+            <span class="material-symbols-outlined"> compost </span>
+            <span>Decoration</span>
           </div>
-          <div class="settings__setting-column">Good</div>
+          <div class="settings__setting-column">Flower Garden</div>
         </li>
 
         <li class="settings__setting">
           <div class="settings__setting-column">
-            <i class="fa-solid fa-water"></i>
-            <span>Irrigation</span>
+            <span class="material-symbols-outlined"> flatware </span>
+            <span>Cutlery</span>
           </div>
-          <div class="settings__setting-column">Done</div>
+          <div class="settings__setting-column">Silver</div>
         </li>
       </ul>
     </main>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
-          <a class="nav__link" href="plants.html">
-            <i class="fa-solid fa-tree fa-2x"></i>
+          <a class="nav__link" href="ballroom.html">
+            <span class="material-symbols-outlined"> cake </span>
           </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="gardening.html">
-            <span class="nav__notification badge"
-              ><i class="fa-brands fa-envira"></i
-            ></span>
-            <i class="fa-solid fa-hand-holding fa-2x"></i>
+          <a class="nav__link" href="teatime.html">
+            <span class="material-symbols-outlined"> emoji_food_beverage </span>
+            <span class="nav__notification badge">
+              <span class="material-symbols-outlined"> nest_eco_leaf </span>
+            </span>
           </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="seedling.html"
-            ><i class="fa-solid fa-seedling fa-2x"></i
-          ></a>
+          <a class="nav__link" href="dessert.html">
+            <span class="material-symbols-outlined"> bakery_dining </span>
+          </a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="more.html">
+            <span class="material-symbols-outlined"> more_horiz </span>
             <div class="nav__dot"></div>
-            <i class="fas fa-ellipsis-h fa-2x"></i>
           </a>
         </li>
       </ul>
     </nav>
+
     <div class="no-mobile">
-      <span>The grass is too Thick!</span>
-      <span>Tend your Garden!</span>
-      <span>Please reduce your browser Width :D</span>
+      <span>The table is too Complicated!</span>
+      <span>Could you please clean it up?</span>
+      <span>Please reduce your browser Width</span>
+      <span>To ENTER 🍵TEA PARTY!🥳😆</span>
     </div>
-    <script
-      src="https://kit.fontawesome.com/759066b956.js"
-      crossorigin="anonymous"
-    ></script>
+    <div class="no-mobile_bg"></div>
+    <div class="mobile_bg"></div>
   </body>
 </html>
